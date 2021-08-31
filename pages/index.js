@@ -1,26 +1,20 @@
-import styled from 'styled-components';
+import Link from 'next/link';
+import { Container } from 'components/Container';
 import { ButtonWrapper, Button } from 'components/Button';
-import { HeadingWrapper } from 'components/Heading';
+import { H1 } from 'components/Heading';
 
 export default function Home() {
 	return (
 		<Container>
-			<HeadingWrapper>
-				<h1>Next.js CSR, SSR Example</h1>
-			</HeadingWrapper>
+			<H1>Next.js CSR, SSR Example</H1>
 			<ButtonWrapper>
-				<Button>Client-side rendering</Button>
-				<Button>Server-side rendering</Button>
+				<Link passHref={true} href="/csr">
+					<Button>Client-side rendering</Button>
+				</Link>
+				<Link passHref={true} href="/ssr">
+					<Button>Server-side rendering</Button>
+				</Link>
 			</ButtonWrapper>
 		</Container>
 	);
 }
-
-const Container = styled.div`
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-`;
