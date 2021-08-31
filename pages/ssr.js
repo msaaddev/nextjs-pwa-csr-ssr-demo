@@ -1,7 +1,7 @@
-import Back from 'components/Back';
-import { FetchContainer } from 'components/Container';
-import { H2 } from 'components/Heading';
-import Todo from 'components/Todo';
+import Back from '../components/Back';
+import { FetchContainer } from '../components/Container';
+import { H2 } from '../components/Heading';
+import Todo from '../components/Todo';
 
 const SSR = ({ data }) => {
 	return (

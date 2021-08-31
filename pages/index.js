@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import { Container } from 'components/Container';
-import { ButtonWrapper, Button } from 'components/Button';
-import { H1 } from 'components/Heading';
+import { Container } from '../components/Container';
+import { ButtonWrapper, Button } from '../components/Button';
+import { H1 } from '../components/Heading';
 
 export default function Home() {
 	return (
