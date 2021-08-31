@@ -10,8 +10,8 @@ const HeadingWrapper = styled.div`
 		rgba(38, 20, 72, 0.9),
 		rgba(66, 34, 126, 0.9)
 	);
-	margin-bottom: 50px;
 	font-size: 30px;
+	margin-top: -100px;
 `;
 
 export { HeadingWrapper };
